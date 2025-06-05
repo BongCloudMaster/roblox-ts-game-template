@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "A Roblox game made with React and Roblox-TS",
 	"license": "MIT",
-	"author": "Christopher Buss <christopher.buss@pm.me> (https://github.com/christopher-buss)",
+	"author": "Alco-BSide(BongCloudMaster)",
 	"type": "module",
 	"scripts": {
 		"assets:upload": "asphalt sync",
@@ -11,15 +11,6 @@
 		"clean": "npx rimraf out/ && npx rimraf dist",
 		"commit": "commit",
 		"darklua": "darklua process out dist --verbose",
-		"dev:build": "rbxts-build build",
-		"dev:compile": "rbxts-build compile",
-		"dev:open": "rbxts-build open",
-		"dev:restart": "pnpm run dev:stop && pnpm run dev:start",
-		"dev:start": "rbxts-build start",
-		"dev:stop": "rbxts-build stop",
-		"dev:sync": "rbxts-build sync",
-		"postdev:sync": "eslint src/types/services.d.ts --fix",
-		"dev:watch": "rbxts-build watch",
 		"eslint-config": "npx @eslint/config-inspector",
 		"lint": "eslint --max-warnings 0 .",
 		"prepare": "node .husky/install.js",
@@ -56,8 +47,7 @@
 		"@rbxts/t": "catalog:prod",
 		"@rbxts/ui-labs": "catalog:prod",
 		"@rbxts/validate-tree": "catalog:prod",
-		"rbxts-transform-debug": "catalog:prod",
-		"rbxts-transform-env": "catalog:prod"
+		"rbxts-transform-debug": "catalog:prod"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "catalog:dev",
@@ -76,20 +66,10 @@
 		"husky": "catalog:dev",
 		"jiti": "catalog:dev",
 		"lint-staged": "catalog:dev",
-		"rbxts-build": "catalog:dev",
 		"rbxts-transformer-flamework": "catalog:dev",
 		"rimraf": "catalog:dev",
 		"roblox-ts": "catalog:dev",
 		"typescript": "catalog:dev"
 	},
 	"packageManager": "pnpm@10.8.1",
-	"rbxts-build": {
-		"syncLocation": "src/types/services.d.ts",
-		"names": {
-			"build": "dev:build",
-			"compile": "dev:compile",
-			"open": "dev:open",
-			"watch": "dev:watch"
-		}
-	}
 }
