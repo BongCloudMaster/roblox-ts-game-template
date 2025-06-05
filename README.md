@@ -4,7 +4,7 @@
 </h3>
 
 <p align="center">
-    A roblox-ts template for fully managed rojo projects.
+    A roblox-ts template for rojo projects
 </p>
 
 <div align="center">
@@ -16,14 +16,6 @@
 
 </div>
 
-> [!CAUTION]
-> You likely do not need a fully managed rojo project. For the vast majority of
-> projects, a more simple setup will suffice. If you are new to roblox-ts, I
-> would strongly advise against using the vast majority of the tooling in this
-> project. Instead, I would recommend starting with a more simple setup such as
-> the default flamework template, or the
-> [roblox-ts-template](https://github.com/MonzterDev/Roblox-TS-Template) by
-> MonzterDev.
 ---
 
 This is my personal template for use in the roblox-ts ecosystem, utilizing
@@ -35,21 +27,13 @@ initiating new projects, complete with frequently used patterns that I adopt
 already configured. Additionally, it integrates my own customized eslint-config,
 which is a highly opinionated guide for writing clean and consistent code.
 
-> [!NOTE]
-> This aims to be a fully-fledged solution to fully managed rojo projects but does
-> not currently have any built-in support for handing models. Eventually this
-> functionality will exist. For now, you can investigate
-> [Lune](https://lune-org.github.io/docs) to figure out solutions that will work
-> for your use case.
-
 ### How to use:
 
 1. Press the green `Use this template` button on the top right of the page to
    create a new repository.
 2. Clone the repository to your local machine.
 3. Run `pnpm install` to install all the dependencies.
-4. Run `pnpm run dev:start` to start the development server.
-5. Start coding! 🎉
+4. Start coding! 🎉
 
 ### Resources
 
@@ -72,10 +56,8 @@ alphabetical order):
 
 -   [Asphalt](https://github.com/jackTabsCode/asphalt)
 -   [Darklua](https://darklua.com/)
--   [Mantle](https://mantledeploy.vercel.app/)
 -   [Rojo](https://rojo.space/)
 -   [Rokit](https://github.com/rojo-rbx/rokit)
--   [rbxts-build](https://www.npmjs.com/package/rbxts-build)
 -   [roblox-ts](https://roblox-ts.com/)
 
 #### Development Tools
@@ -93,10 +75,8 @@ them.
 
 ### Developing
 
-While in development, I would typically use the `pnpm run dev:start` command to
-compile the project and start the development server. This will compile the
-code, build the project, and then automatically open the place file in Roblox
-Studio.
+While in development, I would typically use the `pnpm run build` command to
+compile the project. This will compile the code and then build the project
 
 To publish the project, I would use the `pnpm run prod:build` command to build
 the game project with the production configuration. This will delete your
@@ -128,3 +108,4 @@ usage, and I would like to give credit to the following people and projects:
 
 -   [Grilme99 (Tabletop Island)](https://github.com/grilme99/tabletop-island/)
 -   [Littensy (Slither)](https://github.com/littensy/slither/)
+-   [Christopher Buss (roblox-ts-project-template)](https://github.com/christopher-buss/roblox-ts-project-template)
